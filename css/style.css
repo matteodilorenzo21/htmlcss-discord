@@ -1,0 +1,37 @@
+/* Reset properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generics */
+
+body {
+    font-family: Verdana;
+}
+
+/* Utilities */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.debug .border {
+    border: 2px dashed #000;
+}
+
+/* Header */
+
+header {
+    background-color: lightblue;
+}
+
+.navbar {
+    height: 80px;
+}
