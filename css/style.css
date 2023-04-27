@@ -1,18 +1,16 @@
-/* Reset properties */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Generics */
+/* GENERICS */
+body{
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
 
-body {
-    font-family: Verdana;
-}
-
-/* Utilities */
-
+/* UTILS */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -26,12 +24,128 @@ body {
     border: 2px dashed #000;
 }
 
-/* Header */
-
+/* HEADER */
 header {
-    background-color: lightblue;
+    height: 650px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    color: #fff;
 }
 
 .navbar {
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar > * {
+    padding: 10px;
+    flex-basis: 20%;
+}
+
+.navbar-logo {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.navbar-menu {
+    flex-grow: 1;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    padding: 0px 15px;
+}
+
+a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar-actions {
+    text-align: right;
+}
+
+.navbar-actions > a {
+    background-color: #fff;
+    color: #000;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar-actions > a:hover {
+    color: rgb(0, 85, 255);
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    height: 500px;
+    padding: 50px;
+}
+
+.jumbotron .content {
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.content > * {
+    text-align: center;
+}
+
+h1 {
+    font-size: 90px;
+    line-height: 80px;
+    margin: 25px 0px;
+    padding: 0 60px;
+    padding-bottom: 15px;
+    letter-spacing: -5px;
+}
+
+.content > p {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 60px;
+    margin: 0 auto;
+    margin: 25px 0px;
+}
+
+.jumbo-content-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#jumbo-btn-sx {
+    background-color: #fff;
+    color: #1c1c1c;
+    letter-spacing: 1px;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+#jumbo-btn-dx {
+    background-color: #1c1c1c;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-left: 10px;
 }
