@@ -29,14 +29,21 @@ header {
     height: 650px;
     background-image: url(../img/jumbo.png);
     background-size: cover;
+    background-position: center;
     color: #fff;
 }
 
 .navbar {
     height: 80px;
+    background-color: #255EE9;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
 }
 
 .navbar > * {
@@ -45,7 +52,7 @@ header {
 }
 
 .navbar-logo {
-    text-align: left;
+    text-align: center;
     padding-top: 20px;
 }
 
@@ -75,7 +82,7 @@ a:hover {
 }
 
 .navbar-actions {
-    text-align: right;
+    text-align: center;
 }
 
 .navbar-actions > a {
@@ -109,7 +116,7 @@ a:hover {
 
 h1 {
     font-size: 80px;
-    line-height: 80px;
+    line-height: 70px;
     margin: 25px 0px;
     padding: 0 60px;
     padding-bottom: 15px;
@@ -180,7 +187,7 @@ section > .container {
 }
 
 .bg-gray {
-    background-color: #dedede;
+    background-color: #DAD4C9;
 }
 
 .flex > .large-col {
@@ -377,4 +384,16 @@ footer {
 #sign-in-btn:hover {
     opacity: 0.8;
     box-shadow: 3px 3px 3px 3px #0000003e;
+}
+
+.wave-gray {
+    height: 150px;
+    background-image: url(../img/wave.svg);
+    filter: invert(50%) sepia(20%) brightness(160%);
+}
+
+.wave-white {
+    height: 150px;
+    background-image: url(../img/wave.svg);
+    filter: invert(50%);
 }
